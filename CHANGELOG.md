@@ -1,3 +1,31 @@
+## 7.0.2
+
+* publish v6.4.1 for flutter 3.3.0 and v6.2.2 for flutter 3.0.5
+
+## 7.0.1
+
+* update judging condition of delta(minGesturePageDelta) at it's sliding page when set ExtendedImageMode.gesture
+
+## 7.0.0
+
+* Migrate to 3.7.0 (#545)
+
+## 6.4.1
+
+* latest code on Flutter 3.3.0 
+
+## 6.4.0
+
+* add [ExtendedImage.globalStateWidgetBuilder] to support to override State Widget if loadStateChanged is not define.(#541)
+
+## 6.3.4
+
+* add preloadPagesCount for ExtendedImageGesturePageView
+
+## 6.3.3
+
+* draw editor with BlendMode.clear.
+
 ## 6.3.2
 
 * support to set insets for paint image at the beginning.(#417)
@@ -10,6 +38,10 @@
 ## 6.3.0
 
 * Migrate to 3.3.0
+
+## 6.2.2
+
+* latest code on Flutter 3.0.5 
 
 ## 6.2.1
 

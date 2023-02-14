@@ -54,6 +54,7 @@ class ExtendedRawImage extends LeafRenderObjectWidget {
         'needed it.');
     return ExtendedRenderImage(
       image: image?.clone(),
+      debugImageLabel: debugImageLabel,
       width: width,
       height: height,
       scale: scale,
@@ -258,7 +259,8 @@ class ExtendedRawImage extends LeafRenderObjectWidget {
         value: matchTextDirection, ifTrue: 'match text direction'));
     properties.add(DiagnosticsProperty<bool>('invertColors', invertColors));
     properties.add(EnumProperty<FilterQuality>('filterQuality', filterQuality));
-    properties.add(DiagnosticsProperty<EdgeInsets>('layoutInsets', layoutInsets));
+    properties
+        .add(DiagnosticsProperty<EdgeInsets>('layoutInsets', layoutInsets));
   }
 
   @override
@@ -270,6 +272,7 @@ class ExtendedRawImage extends LeafRenderObjectWidget {
         'needed it.');
     renderObject
       ..image = image?.clone()
+      ..debugImageLabel = debugImageLabel
       ..width = width
       ..height = height
       ..scale = scale
